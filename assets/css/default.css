@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Colonna MT', sans-serif;
+    src: url(../fonts/COLONNA.TTF);
+}
+
+:root {
+    --lightGray: #e9e8e8;
+    --siteColor1: #007EC5;
+    --siteColor2: #C4121A;
+    --siteColor3: #329d64;
+    --siteBg: #ffffff;
+    --siteText1: #888888;
+    --siteText2: #ffffff;
+    --siteText3: #00283e;
+    --siteText4: #00080c;
+    --siteText5: #2a2a2a;
+    --siteBorder: #e9e8e8;
+
+    --facebook: #3b5998;
+    --twitter: #1da1f2;
+    --instagram: #c32aa3;
+    --linkedin: #0a66c2;
+    --youtube: #ff0000;
+
+    --textBG1: linear-gradient(to right top, #007ec5, #0067a1, #00517e, #003c5d, #00283e);
+    --textBG2: linear-gradient(to right top, #c4121a, #a60053, #6a266c, #263061, #00283e);;
+    --textBG3: linear-gradient(to right top, #329d64, #00806f, #00626c, #00445b, #00283e);;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Raleway', sans-serif !important;
+    scroll-behavior: smooth;
+}
+
+.decor-1 {
+    width: 150px;
+    border-top: 1px solid var(--siteColor1);
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.decor-1::before {
+    display: block;
+    width: 150px;
+    margin-top: 2px;
+    margin-left: 10px;
+    border-top: 1px solid var(--siteColor2);
+    content: '';
+}
+
+.decor-1::after {
+    display: block;
+    width: 150px;
+    margin-top: 2px;
+    margin-left: -10px;
+    border-top: 1px solid var(--siteColor3);
+    content: '';
+}
+
+.decor-2 {
+    width: 10%;
+    transform: skew(0deg, 10deg);
+    position: absolute;
+    right: -1px;
+    bottom: 10px;
+    opacity: 0.15;
+
+}
+
+.decor-2 .blue-decor,
+.decor-2 .red-decor,
+.decor-2 .green-decor {
+    height: 30px;
+    margin: 8px 0;
+    background-size: 400% 210% !important;
+}
+
+.decor-2 .blue-decor {
+    border: 1px solid var(--siteColor1);
+    background: linear-gradient(55deg, var(--siteColor1), var(--siteColor1), #001c2c, var(--siteColor1), var(--siteColor1));
+}
+
+.decor-2 .red-decor {
+    border: 1px solid var(--siteColor2);
+    background: linear-gradient(55deg, var(--siteColor2), var(--siteColor2), #001c2c, var(--siteColor2), var(--siteColor2));
+}
+
+.decor-2 .green-decor {
+    border: 1px solid var(--siteColor3);
+    background: linear-gradient(55deg, var(--siteColor3), var(--siteColor3), #001c2c, var(--siteColor3), var(--siteColor3));
+}

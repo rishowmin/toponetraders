@@ -4,7 +4,7 @@ Header Section Start
 
 .header_section {
   position: relative;
-  z-index: 1;
+  z-index: 99999;
 }
 
 /* Top Header */
@@ -108,7 +108,7 @@ Header Section Start
 }
 
 .header_section_inner .top_header .top_header_right ul li .language_selector .dropdown-menu a:hover {
-  background: linear-gradient(to right top, #007ec5, #0067a1, #00517e, #003c5d, #00283e);
+  background: linear-gradient(to right top, var(--siteColor1), #0067a1, #00517e, #003c5d, var(--siteText3));
   color: var(--siteText2);
 }
 
@@ -122,7 +122,7 @@ Header Section Start
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0px;
+  padding: 15px 0px;
 }
 
 .header_section_inner .middle_header .middle_header_inner .middle_header_middle {}
@@ -187,7 +187,7 @@ Header Section Start
 }
 
 .header_section_inner .middle_header .middle_header_inner .middle_header_right ul li a:hover .contact_detail h4 {
-  background: linear-gradient(to right top, #007ec5, #0067a1, #00517e, #003c5d, #00283e);
+  background: linear-gradient(to right top, var(--siteColor1), #0067a1, #00517e, #003c5d, var(--siteText3));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -222,13 +222,30 @@ Header Section Start
 }
 
 #main-menu,
-#main_menu_catalog_pdf {
+#main_menu_button {
   clear: both;
+}
+
+.header_section_inner .bottom_header {
+  position: relative;
+  background: var(--siteColor1);
+  background: linear-gradient(270deg, var(--siteColor1) 50%, var(--siteText3) 100%);
+}
+
+.header_section_inner .bottom_header::before {
+  background: var(--siteColor3);
+  background: linear-gradient(90deg, var(--siteColor3) 50%, var(--siteText3) 100%);
+  content: "";
+  width: 22%;
+  height: 100%;
+  right: 0;
+  position: absolute;  
+  border-left: 3px solid #fff;
 }
 
 .header_section_inner .bottom_header .main-nav {
   position: relative;
-  background: radial-gradient(circle, #007ec5 0%, #00283e 100%);
+  background: transparent;
   border-radius: 0;
   border: none;
 }
@@ -365,14 +382,23 @@ Header Section Start
   border-color: var(--siteColor1) transparent transparent transparent !important;
 }
 
-.header_section_inner .bottom_header .main-nav .main_menu_catalog_pdf {}
+.header_section_inner .bottom_header .main-nav .navbar_btn {
+  display: block;
+}
 
-.header_section_inner .bottom_header .main-nav #main_menu_catalog_pdf .btn-pdf {
+.header_section_inner .bottom_header .main-nav .navbar_btn .navbar_btn_inner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header_section_inner .bottom_header .main-nav .navbar_btn .navbar_btn_inner .btn-pdf {
   background: rgb(196,18,26);
-  background: linear-gradient(90deg, #C4121A 0%, #00283e 100%);
+  background: linear-gradient(90deg, var(--siteColor2) 0%, var(--siteText3) 100%);
   background-size: 200% 400%;
   color: var(--siteText2) !important;
   padding: 12px 12px;
+  text-transform: capitalize;
   border-radius: 0;
   border: 1px solid transparent;
   display: flex;
@@ -381,20 +407,90 @@ Header Section Start
   transition: all 0.5s ease;
 }
 
-.header_section_inner .bottom_header .main-nav #main_menu_catalog_pdf .btn-pdf:hover {
+.header_section_inner .bottom_header .main-nav .navbar_btn .navbar_btn_inner .btn-pdf:hover {
   background-size: 400% 400%;
 }
 
-.header_section_inner .bottom_header .main-nav #main_menu_catalog_pdf .btn-pdf svg {
+.header_section_inner .bottom_header .main-nav .navbar_btn .navbar_btn_inner .btn-pdf svg {
   width: 18px;
   height: 18px;
   transition: all 0.5s ease-in-out 0s;
 }
 
-.header_section_inner .bottom_header .main-nav #main_menu_catalog_pdf .btn-pdf:hover svg {
+.header_section_inner .bottom_header .main-nav .navbar_btn .navbar_btn_inner .btn-pdf:hover svg {
   transform: rotateY(360deg);
 }
 
+.header_section_inner .bottom_header .main-nav .navbar_btn .navbar_btn_inner button.search-toggler {
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+.header_section_inner .bottom_header .main-nav .navbar_btn .navbar_btn_inner button.search-toggler svg {
+  width: 25px;
+  height: 25px;
+  stroke-width: 2.5;
+  color: var(--siteText2);
+  transition: all 0.5s ease;
+}
+
+.header_section_inner .bottom_header .main-nav .navbar_btn .navbar_btn_inner button.search-toggler:hover svg {
+  transform: rotateY(360deg);
+}
+
+/* ===================================== 
+Header Section End
+===================================== */
+
+
+
+
+/* ===================================== 
+Search Section Start
+===================================== */
+
+#search_input_box_section {
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+
+.search_input_box_section {
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  max-width: 1140px;
+  z-index: 999;
+  text-align: center;
+  background: linear-gradient(90deg, var(--siteText3) 0%, var(--siteText4) 100%);
+  z-index: 9999;
+}
+
+.search_input_box_section #searchNav {}
+
+.search_input_box_section #searchNav form {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 5px;
+}
+
+.search_input_box_section #searchNav form input {
+  background: transparent;
+  border: 0;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 15px;
+  height: 50px;
+  padding: 0;
+}
+
+.search_input_box_section #searchNav form input:focus {
+  box-shadow: none;
+}
+
+.search_input_box_section #searchNav form input::placeholder {
+  color: var(--siteText1);
+}
 
 /* ===================================== 
 Header Section End
@@ -759,7 +855,7 @@ Hero Slider Section Start
 }
 
 .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
-  background: linear-gradient(90deg, #007EC5 0%, #00283e 100%) !important;
+  background: linear-gradient(90deg, var(--siteColor1) 0%, var(--siteText3) 100%) !important;
   color: var(--siteText2) !important;
 }
 
@@ -803,7 +899,7 @@ Hero Slider Section Start
 
 .quote_section_inner .card .quote_sec form .btn-quote:hover {
   background: rgb(196,18,26);
-  background: linear-gradient(90deg, #C4121A 0%, #00283e 100%);
+  background: linear-gradient(90deg, var(--siteColor2) 0%, var(--siteText3) 100%);
   background-size: 200% 400%;
   border: 2px solid transparent;
   gap: 10px;
@@ -1004,19 +1100,19 @@ About Us Section Start
 
 .about_section .about_section_inner .about_sec_content .card .card-body.mission {
   background: var(--siteColor1);
-  background: linear-gradient(90deg, var(--siteColor1) 0%, #00283e 100%);
+  background: linear-gradient(90deg, var(--siteColor1) 0%, var(--siteText3) 100%);
   background-size: 200% 400%;
 }
 
 .about_section .about_section_inner .about_sec_content .card .card-body.vision {
   background: var(--siteColor2);
-  background: linear-gradient(90deg, var(--siteColor2) 0%, #00283e 100%);
+  background: linear-gradient(90deg, var(--siteColor2) 0%, var(--siteText3) 100%);
   background-size: 200% 400%;
 }
 
 .about_section .about_section_inner .about_sec_content .card .card-body.values {
   background: var(--siteColor3);
-  background: linear-gradient(90deg, var(--siteColor3) 0%, #00283e 100%);
+  background: linear-gradient(90deg, var(--siteColor3) 0%, var(--siteText3) 100%);
   background-size: 200% 400%;
 }
 

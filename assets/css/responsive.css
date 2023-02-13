@@ -91,6 +91,14 @@
 
     
     /* Middle Header */
+    .header_section_inner .middle_header {
+        border-bottom: 1px solid var(--siteColor1);
+    }
+
+    .header_section_inner .middle_header .middle_header_inner {
+        padding: 12px 0;
+    }
+
     .header_section_inner .middle_header .middle_header_inner .middle_header_middle a {
         width: 55%;
         margin: 0 auto;
@@ -148,14 +156,14 @@
     }
     .header_section_inner .bottom_header .main-nav a.nav-brand {
         width: 40%;
-        /* position: absolute;
-        top: 50%;
-        transform: translateY(-50%) translateX(-50%);
-        left: 50%; */
     }
     
     .header_section_inner .bottom_header .main-nav ul.sm-parent-1 li {
         border-top: 1px solid var(--siteBorder);
+    }
+
+    .header_section_inner .bottom_header .main-nav ul.sm-parent-1 li:first-child {
+        border-top: 1px solid var(--siteColor1);
     }
 
     .header_section_inner .bottom_header .main-nav ul.sm-parent-1 li a {
@@ -250,6 +258,10 @@
         position: relative;
         top: -6px;
     }
+
+    .header_section_inner .bottom_header .main-nav .navbar_btn {
+      display: none !important;
+    }    
 
     /* ===================================== 
     Header Section End
@@ -755,7 +767,7 @@
       clear: none;
     }
 
-    #main_menu_catalog_pdf{
+    #main_menu_button{
         float: left;
         clear: none;
     }
@@ -771,7 +783,7 @@
   @media (min-width:768px) {
     /* prevent text rendering degrade during animation in Mac browsers */
     #main-menu,
-    #main_menu_catalog_pdf {
+    #main_menu_button {
       -webkit-font-smoothing: subpixel-antialiased;
     }
     /* show animation */

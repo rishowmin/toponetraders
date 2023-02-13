@@ -316,18 +316,36 @@
                                     </li>
                                 </ul>
 
-                                <div id="main_menu_catalog_pdf" class="d-none d-lg-block">                                
-                                    <a href="Top_One_Traders.pdf" class="btn btn-light btn-pdf" target="_blank">
-                                        <i data-feather="download"></i>
-                                        <span>Download Brochure</span>
-                                    </a>
+                                <div id="main_menu_button" class="navbar_btn">
+                                    <div class="navbar_btn_inner">
+                                        <a href="Top_One_Traders.pdf" class="btn btn-light btn-pdf" target="_blank">
+                                            <i data-feather="download"></i>
+                                            <span>Download Brochure</span>
+                                        </a>
+                                        <button class="search-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#searchNav" aria-controls="searchNav" aria-expanded="false" aria-label="Toggle navigation">
+                                            <i data-feather="search"></i>
+                                        </button>
+                                        <button class="search-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#searchNav" aria-controls="searchNav" aria-expanded="false" aria-label="Toggle navigation">
+                                            <i data-feather="map-pin"></i>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </div>  
                     </nav>
                 </div>
-            </div>
+            </div>   
         </header>
+
+        <section id="search_input_box_section" class="search_input_box_section">
+            <div class="container">
+                <div class="collapse search-collapse" id="searchNav">
+                    <form action="" class="d-flex justify-content-between search-inner">
+                        <input type="search" class="form-control me-2" placeholder="Search Here">
+                    </form>
+                </div>
+            </div> 
+        </section>
 
         <section id="heroSlider_section" class="heroSlider_section">
             <div class="heroSlider_section_inner">

@@ -998,7 +998,7 @@ About Us Section Start
 }
 
 .about_section .about_section_inner .about_sec_content .card .card-body {
-  padding: 40px;
+  padding: 50px;
   z-index: 1;
 }
 
@@ -1055,9 +1055,7 @@ About Us Section Start
   font-size: 12px;
   border: 2px solid transparent;
   border-radius: 0;
-  width: 120px;
   height: 40px;
-  line-height: 24px;
   font-weight: 600;
   box-shadow: 3px 3px 0px 0px var(--siteText3);
   transition: all 0.3s ease;
@@ -1089,7 +1087,6 @@ Service Section Start
   font-size: 50px;
   text-transform: uppercase;
   font-weight: 700;
-  font-family: 'Josefin Sans', sans-serif;
   word-spacing: 3px;
   background: var(--textBG1);
   -webkit-background-clip: text;
@@ -1124,7 +1121,6 @@ Service Section Start
 .service_section .service_section_inner .service_sec_content .service_list .service_list_item .card .card-body .count {
   color: var(--siteText2);
   font-weight: 800;
-  font-family: 'Gemunu Libre', sans-serif;
   font-size: 150px;
   position: absolute;
   top: -60px;
@@ -1198,7 +1194,6 @@ Product Section Start
   font-size: 50px;
   text-transform: uppercase;
   font-weight: 700;
-  font-family: 'Josefin Sans', sans-serif;
   word-spacing: 3px;
   background: var(--textBG1);
   -webkit-background-clip: text;

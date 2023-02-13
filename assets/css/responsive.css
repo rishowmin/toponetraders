@@ -20,7 +20,6 @@
 
     .col-mob-6 {
         width: 50% !important;
-        /* padding: 0 5px !important; */
     }
 
     .col-mob-6:nth-child(odd) {
@@ -369,23 +368,92 @@
 
     .quote_section_inner .card .quote_sec {
         display: block;
-        padding: 8px 0;
+        padding: 30px 12px;
     }
 
-    .quote_section_inner .card .quote_sec .icon {
-        width: 25px;
-        height: 25px;
-        margin: 0 auto 5px;
-    }
-
-    .quote_section_inner .card .quote_sec h4 {
-        font-size: 8px;
-        line-height: 12px;
+    .quote_section_inner .card .quote_sec h1 {
+        font-size: 25px;
+        margin-bottom: 8px;
         text-align: center;
     }
 
-    .quote_section_inner .card .quote_sec h4 span {
-        font-size: 10px;
+    .quote_section_inner .card .quote_sec p {
+        margin-bottom: 12px;
+        line-height: 20px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .quote_section_inner .card .quote_sec form input,
+    .quote_section_inner .card .quote_sec form select {
+        font-size: 12px;
+        padding: 5px;
+        border-bottom: 1px solid var(--siteText2);
+    }
+
+    .select2-container {
+        width: 100% !important;
+    }
+
+    .select2-container--default .select2-selection--multiple {
+        border-bottom: 1px solid var(--siteBg) !important;
+        padding: 5px !important;
+        line-height: 20px;
+    }    
+
+    .select2-container--default .select2-search--inline .select2-search__field::placeholder {
+        font-size: 12px !important;
+    }
+
+    .select2-container .select2-search--inline .select2-search__field {
+        margin-top: 0 !important;
+    }
+
+    .quote_section_inner .card .quote_sec form .btn-quote {
+        padding: 8px 20px;
+        border: 1px solid var(--siteBg);
+        margin: 0 auto;
+    }
+
+    .quote_section_inner .card .quote_sec form .btn-quote:hover {
+        border: 1px solid transparent;
+    }
+
+    .quote_section_inner .card .quote_sec form .btn-quote svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .quote_section_inner .card .quote_sec form .btn-quote span {
+        font-size: 12px;
+    }
+
+    .quote_section_inner .card .service_sec {
+        padding: 30px 12px;
+    }
+
+    .quote_section_inner .card .service_sec .service_sec_inner {
+        padding: 15px 10px;
+    }
+
+    .quote_section_inner .card .service_sec .service_sec_inner .icon {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 15px;
+    }
+
+    .quote_section_inner .card .service_sec .service_sec_inner h4 {
+        font-size: 12px;
+        margin-bottom: 10px;
+        line-height: 16px;
+    }
+
+    .quote_section_inner .card .service_sec .service_sec_inner h4 span {
+        font-size: 14px;
+    }
+
+    .quote_section_inner .card .service_sec .service_sec_inner p {
+        font-size: 12px;
     }
 
     /* ===================================== 
@@ -400,29 +468,31 @@
     ===================================== */
 
     .about_section {
-        padding: 30px 0;
+        padding: 30px 0 0;
         margin-top: 0;
-    }
-
-    .about_section .about_section_inner .mission-row {
-        width: auto !important;
     }
 
     .about_section .about_section_inner .col-mob-6 {
         width: 50% !important;
     }
 
-    .about_section .about_section_inner .col-mob-6:nth-child(odd) {
-        padding-right: 8px !important;
+    .about_section .about_section_inner .about_sec_image {
+        width: 100%;
     }
 
-    .about_section .about_section_inner .col-mob-6:nth-child(even) {
-        padding-left: 8px !important;
+    .about_section .about_section_inner .about_sec_title {
+        text-align: center;
     }
 
     .about_section .about_section_inner .about_sec_title h4 {
         font-size: 16px;
         line-height: 20px;
+        margin-bottom: 6px;
+    }
+
+    .about_section .about_section_inner .about_sec_title h1 {
+        font-size: 25px;
+        line-height: 30px;
         margin-bottom: 10px;
     }
 
@@ -433,8 +503,14 @@
     .about_section .about_section_inner .about_sec_title p {
         font-size: 12px;
         line-height: 20px;
-        width: 90%;
-        margin: 0 auto 10px;
+    }    
+
+    .about_section .about_section_inner .col-lg-4:nth-child(1) {
+        padding-left: 0 !important;
+    }
+
+    .about_section .about_section_inner .col-lg-4:nth-child(3) {
+      padding-right: 0 !important;
     }
 
     .about_section .about_section_inner .about_sec_content .card {
@@ -442,33 +518,58 @@
     }
 
     .about_section .about_section_inner .about_sec_content .card .card-body {
-        padding: 20px 15px;
-        z-index: 1;
+        padding: 20px 12px;
+        text-align: center;
     }
 
     .about_section .about_section_inner .about_sec_content .card .card-body .icon {
-        width: 50px;
-        height: 50px;
-        padding: 10px;
-        box-shadow: 2px 2px var(--siteText3);
+        width: 35px;
+        height: 35px;
+        padding: 0;
+        margin: 0 auto;
     }
 
     .about_section .about_section_inner .about_sec_content .card .card-body h4 {
-        font-size: 12px;
-        letter-spacing: 1px;
-        margin: 10px 0 0;
+        font-size: 14px;
+        margin: 10px 0;
     }
 
     .about_section .about_section_inner .about_sec_content .card .card-body p {
         font-size: 12px;
-        line-height: 20px;
+        line-height: 18px;
     }
 
     .about_section .about_section_inner .about_sec_detail .btn-details {
         font-size: 8px;
-        width: 80px;
-        height: 28px;
-        line-height: 13px;
+        height: 30px;
+        line-height: 8px;
+    }
+
+    .about_section .about_section_inner .about_sec_count {
+        padding: 0 20px;
+    }
+
+    .about_section .about_section_inner .about_sec_count .count_inner {
+        text-align: center;
+    }
+
+    .about_section .about_section_inner .about_sec_count .count_inner h2 {
+        justify-content: center;
+        gap: 1px;
+    }
+
+    .about_section .about_section_inner .about_sec_count .count_inner h2 span.purecounter {
+        font-size: 30px !important;
+        line-height: 30px !important;
+    }
+
+    .about_section .about_section_inner .about_sec_count .count_inner h2 span {
+        font-size: 20px !important;
+        line-height: 20px !important;
+    }
+
+    .about_section .about_section_inner .about_sec_count .count_inner h5 {
+        font-size: 14px;
     }
 
     /* ===================================== 

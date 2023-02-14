@@ -1257,7 +1257,7 @@ Product Section Start
 
 .product_section .product_section_inner .product_category_sec .product_category_inner:hover .card {
   background: var(--siteBg);  
-  border-radius: 5px;
+  border-radius: 0 50px 0 0;
   border-bottom: 3px solid transparent;
   box-shadow: 0 10px 20px 0 rgb(0 0 0 / 5%);
 }
@@ -1338,6 +1338,93 @@ Product Section Start
 
 /* ===================================== 
 Product Section End
+===================================== */
+
+
+
+
+/* ===================================== 
+Testimonials Section Start
+===================================== */
+
+.testimonials_section {
+  padding: 50px 0;
+}
+
+.testimonials_section .testimonials_section_inner {}
+
+.testimonials_section .testimonials_section_inner .testimonials_slider {}
+
+.testimonials_section .testimonials_section_inner .testimonials_slider .item {}
+
+.testimonials_section .testimonials_section_inner .testimonials_slider .item img {
+  display: block;
+}
+
+.testimonials_section .testimonials_section_inner .testimonials_slider .item .content {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: inherit;
+  z-index: 9;
+}
+
+.testimonials_section .testimonials_section_inner .testimonials_slider .item .content .testimonial {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(180deg, var(--siteColor3) 0%, var(--siteText3) 100%);
+}
+
+.testimonials_section .testimonials_section_inner .testimonials_slider .item .content .testimonial .testimonial_content {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.testimonials_section .testimonials_section_inner .testimonials_slider .item .content .testimonial .testimonial_content .testimonial_quote {
+  position: absolute;
+  font-size: 20em;
+  color: rgba(255,255,255,0.1) !important;
+  bottom: -30px;
+  right: -30px;
+  transform: rotate(-90deg);
+}
+
+.testimonials_section .testimonials_section_inner .testimonials_slider .item .content .testimonial .testimonial_content .testimonial_quote svg {}
+
+.testimonials_section .testimonials_section_inner .testimonials_slider .item .content .testimonial .testimonial_content p {
+  font-size: 22px;
+  line-height: 34px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.testimonials_section .testimonials_section_inner .testimonials_slider .item .content .testimonial .testimonial_content .testimonial_caption {
+  position: relative;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.testimonials_section .testimonials_section_inner .testimonials_slider .item .content .testimonial .testimonial_content .testimonial_caption h5 {
+  color: #3143ef;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.testimonials_section .testimonials_section_inner .testimonials_slider .item .content .testimonial .testimonial_content .testimonial_caption label {
+  margin-bottom: 0;
+  font-weight: 600;
+  color: #fd5b03;
+  display: block;
+}
+
+/* ===================================== 
+Testimonials Section Start
 ===================================== */
 
 

@@ -236,7 +236,7 @@ Header Section Start
   background: var(--siteColor3);
   background: linear-gradient(90deg, var(--siteColor3) 50%, var(--siteText3) 100%);
   content: "";
-  width: 22%;
+  width: 25%;
   height: 100%;
   right: 0;
   position: absolute;  

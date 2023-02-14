@@ -641,7 +641,7 @@
         border-bottom: 3px solid var(--siteColor1);
     }
     .product_section .product_section_inner .product_category_sec .product_category_inner .card .card-body {
-        padding: 10px 10px 20px;
+        padding: 10px 15px 20px;
     }
     .product_section .product_section_inner .product_category_sec .product_category_inner .card .card-body .icon {
         width: 60px;

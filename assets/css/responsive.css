@@ -730,6 +730,9 @@
     /* ===================================== 
     Testimonials Section Start
     ===================================== */
+    .testimonials_section {
+        padding: 0 0 50px;
+    }
     .testimonials_section .testimonials_section_inner .testimonials_slider .item .content {
         position: unset;
     }

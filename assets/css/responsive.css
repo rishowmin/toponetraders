@@ -723,6 +723,58 @@
     /* ===================================== 
     Why Us Section Start
     ===================================== */
+
+
+
+
+    /* ===================================== 
+    Testimonials Section Start
+    ===================================== */
+    .testimonials_section .testimonials_section_inner .testimonials_slider .item .content {
+        position: unset;
+    }
+    .testimonials_section .testimonials_section_inner .testimonials_slider .item .content .container {
+        padding: 0;
+    }
+    .testimonials_section .testimonials_section_inner .testimonials_slider .item .content .container-fluid .row .col-lg-6 {
+        padding-right: 0;
+    }
+    .testimonials_section .testimonials_section_inner .testimonials_slider .item .content .testimonial {
+        padding: 40px 20px !important;
+    }
+    .testimonials_section .testimonials_section_inner .testimonials_slider .item .content .testimonial .testimonial_content {
+        width: 75%;
+        margin: 0 auto 0 70px !important;
+    }
+    .testimonials_section .testimonials_section_inner .testimonials_slider .item .content .testimonial .testimonial_content .testimonial_header {
+        left: -25%;
+    }
+    .testimonials_section .testimonials_section_inner .testimonials_slider .item .content .testimonial .testimonial_content .testimonial_header h2 {
+        font-size: 35px;
+    }
+    .testimonials_section .testimonials_section_inner .testimonials_slider .item .content .testimonial .testimonial_content .testimonial_quote {
+        font-size: 10em;
+        bottom: 0;
+        right: -10px;
+    }
+    .testimonials_section .testimonials_section_inner .testimonials_slider .item .content .testimonial .testimonial_content p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .testimonials_section .testimonials_section_inner .testimonials_slider .item .content .testimonial .testimonial_content .testimonial_caption {
+        margin-top: 10px;
+    }
+    .testimonials_section .testimonials_section_inner .testimonials_slider .item .content .testimonial .testimonial_content .testimonial_caption h5 {
+        margin-bottom: 0;
+        font-size: 16px;
+    }
+    .testimonials_section .testimonials_section_inner .testimonials_slider .item .content .testimonial .testimonial_content .testimonial_caption label {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    /* ===================================== 
+    Testimonials Section Start
+    ===================================== */
 }
 
 

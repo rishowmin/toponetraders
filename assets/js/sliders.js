@@ -24,7 +24,7 @@ $(document).ready(function () {
         dots: false,
         items: 1,
         mouseDrag: true,
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 5000,
     })
     // Testimonials end

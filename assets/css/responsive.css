@@ -275,9 +275,9 @@
     ===================================== */
     .heroSlider_section .heroSlider_section_inner .owl_carousel_desktop {
         display: none;
-      }
+    }
       
-      .heroSlider_section .heroSlider_section_inner .owl_carousel_mobile {
+    .heroSlider_section .heroSlider_section_inner .owl_carousel_mobile {
         display: block;
       }
     /* Slider */
@@ -305,9 +305,9 @@
 
     .heroSlider_section .heroSlider_section_inner .home_slider .item .cover .header-content h4 {
         font-size: 11px;
-    line-height: 15px;
-    margin: 0 auto 8px;
-    width: 75%;
+        line-height: 15px;
+        margin: 0 auto 8px;
+        width: 75%;
     }
 
     .heroSlider_section .heroSlider_section_inner .home_slider .item .cover .header-content .sliders-button {
@@ -594,6 +594,9 @@
     /* ===================================== 
     Product Section Start
     ===================================== */
+    .product_section {
+        padding: 50px 0 0;
+    }
     .product_section .product_section_inner {
         background: none;
     }
@@ -674,6 +677,51 @@
     }
     /* ===================================== 
     Product Section End
+    ===================================== */
+
+
+
+
+    /* ===================================== 
+    Why Us Section Start
+    ===================================== */
+    .whyus_section {
+        padding: 50px 0;
+    }
+    .whyus_section .whyus_section_inner .whyus_sec_left .card {
+        clip-path: polygon(0 0, 75% 0, 100% 25%, 100% 100%, 0 100%, 0 0);
+    }
+    .whyus_section .whyus_section_inner .whyus_sec_left .card .card-body {
+        padding: 30px;
+    }
+    .whyus_section .whyus_section_inner .whyus_sec_left .card .card-body .whyus_sec_left_inner h2 {
+        font-size: 25px;
+        line-height: 25px;
+        margin-bottom: 10px;
+    }
+    .whyus_section .whyus_section_inner .whyus_sec_left .card .card-body .whyus_sec_left_inner h2 span {
+        font-size: 20px;
+    }
+    .whyus_section .whyus_section_inner .whyus_sec_left .card .card-body .whyus_sec_left_inner ul {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .whyus_section .whyus_section_inner .whyus_sec_left .card .card-body .whyus_sec_left_inner p {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+    .whyus_section .whyus_section_inner .whyus_sec_right .whyus_sec_right_inner .card .card-body {
+        padding: 25px 20px;
+    }
+    .whyus_section .whyus_section_inner .whyus_sec_right .whyus_sec_right_inner .card .card-body .icon {
+        width: 40%;
+        margin: 0 auto 15px;
+    }
+    .whyus_section .whyus_section_inner .whyus_sec_right .whyus_sec_right_inner .card .card-body .content h4 {
+        font-size: 14px;
+    }
+    /* ===================================== 
+    Why Us Section Start
     ===================================== */
 }
 
@@ -772,6 +820,16 @@
     }
     .header_section_inner .bottom_header::before {
         width: 21.5% !important;
+    }
+    .whyus_section .whyus_section_inner .whyus_sec_right .whyus_sec_right_inner .card .card-body {
+        padding: 48px 20px;
+    }
+    .testimonials_section .testimonials_section_inner .testimonials_slider .item .content .testimonial .testimonial_content {
+        width: 70%;
+        margin-left: 100px;
+    }
+    .testimonials_section .testimonials_section_inner .testimonials_slider .item .content .testimonial .testimonial_content .testimonial_header h2 {
+        font-size: 70px;
     }
 }
 

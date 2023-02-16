@@ -446,6 +446,7 @@
 
     .quote_section_inner .card .service_sec .service_sec_inner {
         padding: 15px 10px;
+        clip-path: polygon(0 0, 70% 0, 100% 30%, 100% 100%, 0 100%, 0 0);
     }
 
     .quote_section_inner .card .service_sec .service_sec_inner .icon {
@@ -650,7 +651,7 @@
         width: 60px;
         height: 60px;
         padding: 10px;
-        border-radius: 8px 0;
+        border-radius: 5px 0 5px 0;
         margin: 0 auto 15px;
     }
     .product_section .product_section_inner .product_category_sec .product_category_inner .card .card-body h4 {
@@ -774,6 +775,17 @@
     .testimonials_section .testimonials_section_inner .testimonials_slider .item .content .testimonial .testimonial_content .testimonial_caption label {
         font-size: 12px;
         line-height: 15px;
+    }
+    .testimonials_section .testimonials_section_inner .testimonials_slider .owl-nav {
+        top: -1px;
+        bottom: unset;
+        right: unset;
+        left: 0;
+        padding: 3px 30px 3px 10px;
+        clip-path: polygon(0 0, 100% 0, 85% 50%, 70% 100%, 0 100%, 0 50%);
+    }
+    .testimonials_section .testimonials_section_inner .testimonials_slider .owl-nav button span {
+        font-size: 25px;
     }
     /* ===================================== 
     Testimonials Section Start

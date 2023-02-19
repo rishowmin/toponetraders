@@ -790,6 +790,33 @@
     /* ===================================== 
     Testimonials Section Start
     ===================================== */
+
+
+
+
+    /* ===================================== 
+    Clients Section Start
+    ===================================== */
+    .clients_section .clients_section_inner .clients_slider .owl-stage-outer {
+        width: 72%;
+        padding: 20px 0;
+    }
+    .clients_section .clients_section_inner .clients_slider .owl-stage-outer .owl-stage {
+        display: flex;
+        align-items: center;
+    }
+    .clients_section .clients_section_inner .clients_slider .owl-stage-outer .owl-item.active {
+        width: fit-content !important;
+    }
+    .clients_section .clients_section_inner .clients_slider .owl-nav {
+        top: 18px;
+    }
+    .clients_section .clients_section_inner .clients_slider .owl-nav button span {
+        font-size: 30px;
+    }
+    /* ===================================== 
+    Clients Section End
+    ===================================== */
 }
 
 

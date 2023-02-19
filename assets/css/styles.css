@@ -1573,6 +1573,18 @@ Clients Section Start
 
 .clients_section {
   background: var(--siteColor1);
+  position: relative;
+}
+.clients_section::before {
+  content: "";
+  background: url(../img/dot-pattern.png) center top ;
+  position: absolute;
+  height: 100%;
+  right: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-size: inherit;
 }
 
 .clients_section .clients_section_inner {
@@ -1641,12 +1653,220 @@ Clients Section End
 /* ===================================== 
 Footer Section Start
 ===================================== */
-.footer_section {}
-
-.footer_section .footer_section_inner {}
-
-.footer_section .footer_section_inner .footer_top {
+.footer_section {
   background-color: var(--siteText3);
+  /* position: relative; */
+}
+
+.footer_section::before {
+  content: "";
+  /* background: url(../img/footer-bg.png) center top var(--siteText3); */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  left: 0;
+  top: 0;
+  background-size: contain;
+}
+
+.footer_section .footer_section_inner {
+  /* background: url(assets/img/dot-shape.png); */
+}
+
+.footer_section .footer_section_inner .footer_top {  
+  background-color: var(--siteText3);
+  padding: 80px 0;
+}
+
+.footer_section .footer_section_inner .footer_top .footer-col {}
+
+.footer_section .footer_section_inner .footer_top .footer-col .logo {
+  width: 30%;
+  margin: 0 auto;
+}
+
+.footer_section .footer_section_inner .footer_top .footer-col .logo img {
+  width: 100%;
+}
+
+.footer_section .footer_section_inner .footer_top .footer-col h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--siteBorder);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.footer_section .footer_section_inner .footer_top .footer-col h3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 50px;
+  width: 100%;
+  height: 4px;
+  background: var(--siteColor1);
+}
+
+.footer_section .footer_section_inner .footer_top .footer-col .content {
+  width: 90%;
+}
+
+.footer_section .footer_section_inner .footer_top .footer-col .content p {
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--siteText6);
+}
+
+.footer_section .footer_section_inner .footer_top .footer-col .newsletter {
+  width: 90%;
+}
+
+.footer_section .footer_section_inner .footer_top .footer-col .newsletter form input {
+  border: 1px solid var(--siteText6);
+  background: transparent;
+  height: 40px;
+  font-size: 14px;
+  color: var(--siteText2);
+  border-radius: 0;
+  padding: 5px 12px;
+}
+
+.footer_section .footer_section_inner .footer_top .footer-col .newsletter form input::placeholder {
+  color: var(--siteText6);
+}
+
+.footer_section .footer_section_inner .footer_top .footer-col .newsletter form input:focus {
+  box-shadow: none;
+  border: 1px solid var(--siteColor1);
+}
+
+.footer_section .footer_section_inner .footer_top .footer-col .newsletter form button {
+  background: linear-gradient(90deg, var(--siteColor1) 0%, var(--siteColor1) 100%);
+  height: 40px;
+  border-radius: 0;
+  border: 1px solid var(--siteColor1);
+  padding: 5px 12px;
+  font-size: 14px;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+}
+
+.footer_section .footer_section_inner .footer_top .footer-col .newsletter form button:hover {
+  background: linear-gradient(90deg, var(--siteColor1) 0%, var(--siteText3) 100%);
+}
+
+.footer_section .footer_section_inner .footer_top .footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer_section .footer_section_inner .footer_top .footer-col ul.productlinks,
+.footer_section .footer_section_inner .footer_top .footer-col ul.contactlinks {
+  column-count: 1;
+}
+
+.footer_section .footer_section_inner .footer_top .footer-col ul.uselinks {
+  column-count: 2;
+}
+
+.footer_section .footer_section_inner .footer_top .footer-col ul.sociallinks {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer_section .footer_section_inner .footer_top .footer-col ul li {
+  padding: 6px 0;
+}
+
+.footer_section .footer_section_inner .footer_top .footer-col ul li:first-child,
+.footer_section .footer_section_inner .footer_top .footer-col ul.uselinks li:nth-child(6) {
+  padding-top: 0;
+}
+
+.footer_section .footer_section_inner .footer_top .footer-col ul li:last-child,
+.footer_section .footer_section_inner .footer_top .footer-col ul.uselinks li:nth-child(5) {
+  padding-bottom: 0;
+}
+
+.footer_section .footer_section_inner .footer_top .footer-col ul.sociallinks li {
+  padding: 5px 6px !important;
+  border: 1px solid var(--siteText6);
+  width: 30px;
+  height: 30px;
+  transition: all 0.4s ease;
+}
+
+.footer_section .footer_section_inner .footer_top .footer-col ul.sociallinks li:hover {
+  background: var(--siteColor1);
+  border: 1px solid transparent;
+}
+
+.footer_section .footer_section_inner .footer_top .footer-col ul li a {
+  font-size: 14px;
+  color: var(--siteText6);
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  transition: all 0.3s ease-in;
+}
+
+.footer_section .footer_section_inner .footer_top .footer-col ul li a:hover {
+  color: var(--siteText2);
+}
+
+.footer_section .footer_section_inner .footer_top .footer-col ul li a i {
+  font-size: 18px;
+  position: relative;
+  top: 3px;
+}
+
+.footer_section .footer_section_inner .footer_top .footer-col ul.sociallinks li a i {
+  color: var(--siteText2);
+  position: unset;
+}
+
+.footer_section .footer_section_inner .footer_top .footer-col ul.sociallinks li:hover a i {
+  color: var(--siteText2);
+}
+
+.footer_section .footer_section_inner .footer_top .footer-col ul li a span {}
+
+
+.footer_section .footer_section_inner .footer_bottom {
+  background: var(--siteText7);
+}
+
+.footer_section .footer_section_inner .copyright_sec {
+  padding: 15px 0;
+}
+
+.footer_section .footer_section_inner .copyright_sec p {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--siteText2);
+  text-align: center;
+}
+
+.footer_section .footer_section_inner .copyright_sec p span {}
+
+.footer_section .footer_section_inner .copyright_sec p a {
+  color: var(--siteText2);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer_section .footer_section_inner .copyright_sec p a:hover {
+  color: var(--siteColor1);
 }
 
 /* ===================================== 

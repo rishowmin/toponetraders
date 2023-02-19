@@ -1,5 +1,8 @@
 /* Media Query for Mobile Devices */
 @media (max-width: 480px) {
+    body::-webkit-scrollbar {
+        width: 8px
+    }
     .col-mob-3 {
         width: 25% !important;
         padding: 0 5px !important;
@@ -799,7 +802,7 @@
     ===================================== */
     .clients_section .clients_section_inner .clients_slider .owl-stage-outer {
         width: 72%;
-        padding: 20px 0;
+        padding: 30px 0;
     }
     .clients_section .clients_section_inner .clients_slider .owl-stage-outer .owl-stage {
         display: flex;
@@ -809,13 +812,116 @@
         width: fit-content !important;
     }
     .clients_section .clients_section_inner .clients_slider .owl-nav {
-        top: 18px;
+        top: 28px;
     }
     .clients_section .clients_section_inner .clients_slider .owl-nav button span {
         font-size: 30px;
     }
     /* ===================================== 
     Clients Section End
+    ===================================== */
+
+
+
+
+    /* ===================================== 
+    Footer Section Start
+    ===================================== */
+    .footer_section .footer_section_inner .footer_top {
+        padding: 40px 0;
+    }
+    .footer_section .footer_section_inner .footer_top .footer-col .logo {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .footer_section .footer_section_inner .footer_top .footer-col {
+        text-align: center;
+    }
+    .footer_section .footer_section_inner .footer_top .footer-col h3 {
+        font-size: 16px;
+        letter-spacing: 1px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+    .footer_section .footer_section_inner .footer_top .footer-col h3::after {
+        left: 30%;
+        max-width: 150px;
+        height: 2px;
+    }
+    .footer_section .footer_section_inner .footer_top .footer-col .content {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .footer_section .footer_section_inner .footer_top .footer-col .content p {
+        font-size: 12px;
+        line-height: 22px;
+    }
+    .footer_section .footer_section_inner .footer_top .footer-col ul.productlinks,
+    .footer_section .footer_section_inner .footer_top .footer-col ul.uselinks {
+        column-count: 1;
+        text-align: center;
+    }
+    .footer_section .footer_section_inner .footer_top .footer-col ul.contactlinks {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .footer_section .footer_section_inner .footer_top .footer-col ul.sociallinks {
+        justify-content: center;
+    }
+    .footer_section .footer_section_inner .footer_top .footer-col .newsletter {
+        margin: 0 auto;
+    }
+    .footer_section .footer_section_inner .footer_top .footer-col ul li {
+        padding: 5px 0;
+    }
+    .footer_section .footer_section_inner .footer_top .footer-col ul.productlinks li,
+    .footer_section .footer_section_inner .footer_top .footer-col ul.uselinks li {
+        margin: 0;
+        width: auto;
+        padding: 0 10px;
+        position: relative;
+        display: inline-flex;
+    }
+    .footer_section .footer_section_inner .footer_top .footer-col ul.productlinks li::after,
+    .footer_section .footer_section_inner .footer_top .footer-col ul.uselinks li::after {
+        content: "";
+        display: inline-block;
+        width: 4px;
+        height: 4px;
+        border-radius: 3px;
+        background: var(--siteBorder);
+        position: absolute;
+        right: -4px;
+        top: 7px;
+    }
+    .footer_section .footer_section_inner .footer_top .footer-col ul.productlinks li:last-child::after,
+    .footer_section .footer_section_inner .footer_top .footer-col ul.uselinks li:last-child:after {
+        display: none;
+    }
+    .footer_section .footer_section_inner .footer_top .footer-col ul li a {
+        font-size: 12px;
+        display: block;
+    }
+    .footer_section .footer_section_inner .footer_top .footer-col ul.productlinks li a i,
+    .footer_section .footer_section_inner .footer_top .footer-col ul.uselinks li a i {
+        display: none;
+    }
+    .footer_section .footer_section_inner .footer_top .footer-col ul.contactlinks li a i {
+        margin-right: 5px;
+    }
+    .footer_section .footer_section_inner .copyright_sec p {
+        margin-bottom: 0;
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--siteText2);
+        text-align: center;
+    }
+    .footer_section .footer_section_inner .copyright_sec {
+        padding: 12px 0;
+    }
+    /* ===================================== 
+    Footer Section Start
     ===================================== */
 }
 

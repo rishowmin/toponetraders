@@ -44,6 +44,12 @@ $(document).ready(function () {
     });
     // Pure Counter end
 
+    
+    // Copyright year start
+    thisyear = new Date().getFullYear(),
+    $(".copyright-year").text(thisyear)    
+    // Copyright year end
+
 
     // Animation on scroll start
     window.addEventListener('load', () => {

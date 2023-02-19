@@ -735,7 +735,7 @@
     Testimonials Section Start
     ===================================== */
     .testimonials_section {
-        padding: 0 0 50px;
+        padding: 0;
     }
     .testimonials_section .testimonials_section_inner .testimonials_slider .item .content {
         position: unset;
@@ -831,7 +831,7 @@
         padding: 40px 0;
     }
     .footer_section .footer_section_inner .footer_top .footer-col .logo {
-        width: 80%;
+        width: 70%;
         margin-bottom: 20px;
     }
     .footer_section .footer_section_inner .footer_top .footer-col {

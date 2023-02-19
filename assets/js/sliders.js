@@ -25,7 +25,7 @@ $(document).ready(function () {
         items: 1,
         mouseDrag: true,
         navText: ["<span aria-label='Previous'><i class='bx bx-left-arrow-alt'></i></span>", "<span aria-label='Next'><i class='bx bx-right-arrow-alt'></i></span>"],
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 5000,
     })
     // Testimonials end
@@ -39,7 +39,7 @@ $(document).ready(function () {
         dots: false,
         mouseDrag: true,
         navText: ["<span aria-label='Previous'><i class='bx bx-chevron-left'></i></span>", "<span aria-label='Next'><i class='bx bx-chevron-right'></i></span>"],
-        autoplay: false,
+        autoplay: true,
         autoplayTimeout: 5000,
         responsive:{
             0:{

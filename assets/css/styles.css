@@ -1,4 +1,69 @@
 /* ===================================== 
+Notice Section Start
+===================================== */
+
+.notice-bar {
+  background: linear-gradient(90deg, var(--siteColor2) 0%, var(--siteText3) 100%);
+  background-size: 200% 400%;
+}
+
+.notice-bar .ticker_wrap {
+  display: flex;
+}
+
+/* .notice-bar .ticker__breaking{
+ white-space: nowrap;
+ background: red;
+	 color: #fff;
+	 overflow: hidden;
+	 padding: 10px 6px;
+  display: inline-block; 
+  font-weight: bold;
+} */
+.notice-bar .ticker__viewport {
+  color: #fff;
+  overflow: hidden;
+  padding: 10px 0;
+  display: inline-block;
+  flex-grow: 1
+}
+
+.notice-bar .ticker__viewport a {
+  cursor: context-menu;
+  color: #fff;
+  text-decoration: none;
+}
+
+.notice-bar .ticker__viewport a:hover {
+  color: yellow;
+  font-weight: bold;
+}
+
+.notice-bar .ticker__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.notice-bar .ticker__item {
+  display: inline-block;
+  white-space: nowrap;
+  padding-right: 40px;
+}
+
+.notice-bar .ticker__item:before {
+  content: "";
+  font-weight: bold;
+}
+
+/* ===================================== 
+Notice Section End
+===================================== */
+
+
+
+/* ===================================== 
 Header Section Start
 ===================================== */
 
@@ -167,7 +232,7 @@ Header Section Start
   transition: all 0.5s ease;
 }
 
-.header_section_inner .middle_header .middle_header_inner .middle_header_right ul li a:hover svg {  
+.header_section_inner .middle_header .middle_header_inner .middle_header_right ul li a:hover svg {
   transform: rotateY(360deg);
 }
 
@@ -244,7 +309,7 @@ Header Section Start
   width: 25%;
   height: 100%;
   right: 0;
-  position: absolute;  
+  position: absolute;
   border-left: 3px solid #fff;
 }
 
@@ -354,7 +419,7 @@ Header Section Start
 }
 
 .header_section_inner .bottom_header .main-nav ul.sm-parent-2 li a span {
-  border-color: var(--siteColor1) transparent transparent transparent;  
+  border-color: var(--siteColor1) transparent transparent transparent;
   right: 15px !important;
 }
 
@@ -383,6 +448,7 @@ Header Section Start
 .sm-clean .scroll-up:hover .scroll-up-arrow {
   border-color: transparent transparent var(--siteColor1) transparent !important;
 }
+
 .sm-clean .scroll-down:hover .scroll-down-arrow {
   border-color: var(--siteColor1) transparent transparent transparent !important;
 }
@@ -398,7 +464,7 @@ Header Section Start
 }
 
 .header_section_inner .bottom_header .main-nav .navbar_btn .navbar_btn_inner .btn-pdf {
-  background: rgb(196,18,26);
+  background: rgb(196, 18, 26);
   background: linear-gradient(90deg, var(--siteColor2) 0%, var(--siteText3) 100%);
   background-size: 200% 400%;
   color: var(--siteText2) !important;
@@ -917,7 +983,7 @@ Hero Slider Section Start
 }
 
 .quote_section_inner .card .quote_sec form .btn-quote:hover {
-  background: rgb(196,18,26);
+  background: rgb(196, 18, 26);
   background: linear-gradient(90deg, var(--siteColor2) 0%, var(--siteText3) 100%);
   background-size: 200% 400%;
   border: 2px solid transparent;
@@ -1146,10 +1212,10 @@ About Us Section Start
 }
 
 .about_section .about_section_inner .about_sec_content .card .card-body h4 {
-    font-size: 22px;
-    font-weight: 700;
-    color: var(--siteText2);
-    margin: 15px 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--siteText2);
+  margin: 15px 0;
 }
 
 .about_section .about_section_inner .about_sec_content .card .card-body p {
@@ -1228,7 +1294,7 @@ Product Section Start
   background: linear-gradient(90deg, var(--siteColor1) 0%, var(--siteText3) 100%);
   background-size: 100%;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;  
+  -webkit-text-fill-color: transparent;
   margin-bottom: 0;
 }
 
@@ -1267,7 +1333,7 @@ Product Section Start
 }
 
 .product_section .product_section_inner .product_category_sec .product_category_inner:hover .card {
-  background: var(--siteBg);  
+  background: var(--siteBg);
   border-radius: 0 75px 0 0;
   border-bottom: 3px solid transparent;
   box-shadow: 0 10px 20px 0 rgb(0 0 0 / 5%);
@@ -1385,8 +1451,8 @@ Why Us Section Start
   font-weight: 800;
   font-size: 50px;
   line-height: 40px;
-  text-transform: uppercase;  
-  margin-bottom: 20px;  
+  text-transform: uppercase;
+  margin-bottom: 20px;
   text-shadow: 4px 4px 3px var(--siteText4);
 }
 
@@ -1503,7 +1569,7 @@ Testimonials Section Start
 
 .testimonials_section .testimonials_section_inner .testimonials_slider .item .content .testimonial .testimonial_content .testimonial_header {
   position: absolute;
-  color: rgba(255,255,255,0.1) !important;
+  color: rgba(255, 255, 255, 0.1) !important;
   bottom: 43%;
   left: -30%;
   transform: rotate(-90deg);
@@ -1519,7 +1585,7 @@ Testimonials Section Start
 .testimonials_section .testimonials_section_inner .testimonials_slider .item .content .testimonial .testimonial_content .testimonial_quote {
   position: absolute;
   font-size: 20em;
-  color: rgba(255,255,255,0.1) !important;
+  color: rgba(255, 255, 255, 0.1) !important;
   bottom: -30px;
   right: -30px;
   transform: rotate(-90deg);
@@ -1594,9 +1660,10 @@ Clients Section Start
   background: var(--siteColor1);
   position: relative;
 }
+
 .clients_section::before {
   content: "";
-  background: url(../img/dot-pattern.png) center top ;
+  background: url(../img/dot-pattern.png) center top;
   position: absolute;
   height: 100%;
   right: 0;
@@ -1606,8 +1673,7 @@ Clients Section Start
   background-size: inherit;
 }
 
-.clients_section .clients_section_inner {
-}
+.clients_section .clients_section_inner {}
 
 .clients_section .clients_section_inner .clients_slider {}
 
@@ -1711,7 +1777,7 @@ Footer Section Start
   /* background: url(assets/img/dot-shape.png); */
 }
 
-.footer_section .footer_section_inner .footer_top {  
+.footer_section .footer_section_inner .footer_top {
   background-color: var(--siteText3);
   padding: 80px 0;
 }

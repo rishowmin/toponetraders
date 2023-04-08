@@ -18,7 +18,7 @@ $(document).ready(function () {
     function animateTicker(){
         $ticker.animate({
             marginLeft: -viewportWidth
-        }, 30000, "linear", function() {
+        }, 40000, "linear", function() {
             $ticker.css('margin-left', '0');
             animateTicker();
         });

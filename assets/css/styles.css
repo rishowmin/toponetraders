@@ -2,16 +2,16 @@
 Notice Section Start
 ===================================== */
 
-.notice-bar {
+.notice-section {
   background: linear-gradient(90deg, var(--siteColor2) 0%, var(--siteText3) 100%);
   background-size: 200% 400%;
 }
 
-.notice-bar .ticker_wrap {
+.notice-section .ticker_wrap {
   display: flex;
 }
 
-/* .notice-bar .ticker__breaking{
+/* .notice-section .ticker__breaking{
  white-space: nowrap;
  background: red;
 	 color: #fff;
@@ -21,39 +21,42 @@ Notice Section Start
   font-weight: bold;
 } */
 
-.notice-bar .ticker__viewport {
+.notice-section .ticker__viewport {
   color: #fff;
   overflow: hidden;
   padding: 10px 0;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
+  z-index: 1;
 }
 
-.notice-bar .ticker__viewport a {
+.notice-section .ticker__viewport a {
   cursor: context-menu;
   color: #fff;
   text-decoration: none;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: all 0.4s ease;
 }
 
-.notice-bar .ticker__viewport a:hover {
-  color: yellow;
-  font-weight: bold;
+.notice-section .ticker__viewport a:hover {
+  color: var(--siteColor3);
 }
 
-.notice-bar .ticker__list {
+.notice-section .ticker__list {
   list-style-type: none;
   padding: 0;
   margin: 0;
   display: flex;
 }
 
-.notice-bar .ticker__item {
+.notice-section .ticker__item {
   display: inline-block;
   white-space: nowrap;
   padding-right: 40px;
 }
 
-.notice-bar .ticker__item:before {
+.notice-section .ticker__item:before {
   content: "";
   font-weight: bold;
 }

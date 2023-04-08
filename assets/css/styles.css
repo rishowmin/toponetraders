@@ -164,6 +164,11 @@ Header Section Start
   height: 30px;
   stroke-width: 1.5px;
   color: var(--siteText3);
+  transition: all 0.5s ease;
+}
+
+.header_section_inner .middle_header .middle_header_inner .middle_header_right ul li a:hover svg {  
+  transform: rotateY(360deg);
 }
 
 .header_section_inner .middle_header .middle_header_inner .middle_header_right ul.contact_option {
@@ -436,7 +441,16 @@ Header Section Start
   transition: all 0.5s ease;
 }
 
+.header_section_inner .bottom_header .main-nav .navbar_btn .navbar_btn_inner a.location-pin svg {
+  color: var(--siteText2);
+  transition: all 0.5s ease;
+}
+
 .header_section_inner .bottom_header .main-nav .navbar_btn .navbar_btn_inner button.search-toggler:hover svg {
+  transform: rotateY(360deg);
+}
+
+.header_section_inner .bottom_header .main-nav .navbar_btn .navbar_btn_inner a.location-pin:hover svg {
   transform: rotateY(360deg);
 }
 

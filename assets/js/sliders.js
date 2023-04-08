@@ -8,7 +8,7 @@ $(document).ready(function () {
         items: 1,
         mouseDrag: true,
         navText: ["<span aria-label='Previous'><i class='bx bx-left-arrow'></i></span>", "<span aria-label='Next'><i class='bx bx-right-arrow'></i></span>"],
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 5000,
         animateOut: 'fadeOut',
         animateIn: 'flipInX',

@@ -162,7 +162,7 @@ Header Section Start
 .header_section_inner .middle_header .middle_header_inner .middle_header_right ul li a svg {
   width: 30px;
   height: 30px;
-  stroke-width: 1px;
+  stroke-width: 1.5px;
   color: var(--siteText3);
 }
 
@@ -414,6 +414,7 @@ Header Section Start
 .header_section_inner .bottom_header .main-nav .navbar_btn .navbar_btn_inner .btn-pdf svg {
   width: 18px;
   height: 18px;
+  stroke-width: 2.5px;
   transition: all 0.5s ease-in-out 0s;
 }
 
@@ -493,7 +494,7 @@ Search Section Start
 }
 
 /* ===================================== 
-Header Section End
+Search Section End
 ===================================== */
 
 
@@ -509,7 +510,11 @@ Hero Slider Section Start
   position: relative;
   /* top: 90px; */
   top: 0;
-  z-index: 0;
+  z-index: 1;
+}
+
+.heroSlider_section .heroSlider_section_inner .home_slider .owl-stage-outer {
+  z-index: 1;
 }
 
 .heroSlider_section .heroSlider_section_inner .owl_carousel_desktop {

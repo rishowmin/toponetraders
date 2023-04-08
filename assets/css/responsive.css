@@ -1015,11 +1015,181 @@
   
 
 @media (min-height: 600px) and (max-height: 768px) and (min-width: 1366px) and (max-width: 1366px) {
+    /* ===================================== 
+    Header Section Start
+    ===================================== */
+    /* Top Header */
+    .header_section_inner .top_header .top_header_left ul li,
+    .header_section_inner .top_header .top_header_right ul li {
+        font-size: 12px;
+        padding: 0 12px;
+        line-height: 34px;
+    }
+    .header_section_inner .top_header .top_header_left ul li a svg {
+        width: 13px;
+        height: 13px;
+    }
+    .header_section_inner .top_header .top_header_right ul li a svg {
+        width: 13px;
+        height: 13px;
+        margin: 0 0.3em 0 0;
+    }
+
+    /* Middle Header */
+    .header_section_inner .middle_header_inner {
+        padding: 10px 0px;
+    }
+    .header_section_inner .middle_header .middle_header_inner .middle_header_right ul li a .contact_detail p {
+        line-height: 18px;
+        font-size: 11px;
+    }
+    .header_section_inner .middle_header .middle_header_inner .middle_header_right ul li a .contact_detail h4 {
+        font-size: 14px;
+    }
+    .header_section_inner .middle_header .middle_header_inner .middle_header_right ul li a svg {
+        width: 26px;
+        height: 26px;
+    }
+
+    /* Bottom Header */
+    .header_section_inner .bottom_header::before {
+        width: 20% !important;
+    }
+    .header_section_inner .bottom_header .main-nav {
+        padding: 5px 0;
+    }
+    .sm-clean a {
+        padding: 10px 15px !important;
+    }
+    .sm-clean a .sub-arrow {
+        right: 3px !important;
+    }
+    .header_section_inner .bottom_header .main-nav ul.sm-parent-1 li a {
+        font-size: 13px;
+    }
+    .header_section_inner .bottom_header .main-nav .navbar_btn .navbar_btn_inner {
+        gap: 15px;
+    }
+    .header_section_inner .bottom_header .main-nav .navbar_btn .navbar_btn_inner .btn-pdf {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+    .header_section_inner .bottom_header .main-nav .navbar_btn .navbar_btn_inner .btn-pdf svg {
+        width: 16px;
+        height: 16px;
+    }
+    .header_section_inner .bottom_header .main-nav .navbar_btn .navbar_btn_inner button.search-toggler svg {
+        width: 20px;
+        height: 20px;
+    }
+    /* ===================================== 
+    Header Section End
+    ===================================== */
+
+
+    /* ===================================== 
+    Search Section Start
+    ===================================== */
+    .search_input_box_section #searchNav form input {
+        font-size: 13px;
+        height: 40px;
+    }
+    /* ===================================== 
+    Search Section End
+    ===================================== */
+
+
+    /* ===================================== 
+    Hero Slider Section Start
+    ===================================== */
+    /* Slider */
+    .heroSlider_section .heroSlider_section_inner .home_slider .item .cover {
+        top: -50px;
+    }
+    .heroSlider_section .heroSlider_section_inner .home_slider .item .cover .header-content {
+        width: 60%;
+        padding: 50px;
+    }
+    .heroSlider_section .heroSlider_section_inner .home_slider .item .cover .header-content h2 {
+        font-size: 25px;
+    }
+    .heroSlider_section .heroSlider_section_inner .home_slider .item .cover .header-content h1 {
+        font-size: 50px;        
+        line-height: 40px;
+    }
+    .heroSlider_section .heroSlider_section_inner .home_slider .item .cover .header-content h4 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .heroSlider_section .heroSlider_section_inner .home_slider .item .cover .header-content .sliders-button {
+        margin-top: 15px;
+    }
+    .heroSlider_section .heroSlider_section_inner .home_slider .item .cover .header-content .sliders-button .btn-download,
+    .heroSlider_section .heroSlider_section_inner .home_slider .item .cover .header-content .sliders-button .btn-quote {
+        width: 150px;
+        height: auto;
+        font-size: 13px;
+        line-height: 13px;
+        padding: 8px 0;
+    }
+
+    /* Quote */
+    .quote_section_inner .card .quote_sec h1 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .quote_section_inner .card .quote_sec p {
+        margin-bottom: 15px;
+        line-height: 20px;
+        font-size: 13px;
+    }
+    .quote_section_inner .card .quote_sec form input,
+    .quote_section_inner .card .quote_sec form select {
+        font-size: 13px;
+    }
+    .select2-container--default .select2-search--inline .select2-search__field {
+        color: var(--siteText2);
+        font-weight: 400;
+        font-size: 13px !important;
+    }
+    .quote_section_inner .card .quote_sec form .btn-quote {
+        padding: 8px 20px;
+    }
+    .quote_section_inner .card .quote_sec form .btn-quote svg {
+        width: 16px;
+        height: 16px;
+        stroke-width: 2.5px;
+    }
+    .quote_section_inner .card .quote_sec form .btn-quote span {
+        font-size: 12px;
+    }
+    .quote_section_inner .card .service_sec .service_sec_inner .icon {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 15px;
+    }
+    .quote_section_inner .card .service_sec .service_sec_inner h4 {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .quote_section_inner .card .service_sec .service_sec_inner h4 span {
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--siteText3);
+        text-transform: uppercase;
+    }
+    .quote_section_inner .card .service_sec .service_sec_inner p {
+        font-size: 12px;
+    }
+    /* ===================================== 
+    Hero Slider Section End
+    ===================================== */
+
+
+
+
     .about_section .about_section_inner .about_sec_content .card .card-body {
         padding: 40px;
-    }
-    .header_section_inner .bottom_header::before {
-        width: 21.5% !important;
     }
     .whyus_section .whyus_section_inner .whyus_sec_right .whyus_sec_right_inner .card .card-body {
         padding: 48px 20px;

@@ -38,7 +38,8 @@ $(document).ready(function () {
         nav: true,
         dots: false,
         mouseDrag: true,
-        navText: ["<span aria-label='Previous'><i class='bx bx-chevron-left'></i></span>", "<span aria-label='Next'><i class='bx bx-chevron-right'></i></span>"],
+        // navText: ["<span aria-label='Previous'><i class='bx bx-chevron-left'></i></span>", "<span aria-label='Next'><i class='bx bx-chevron-right'></i></span>"],
+        navText: ["<span aria-label='Previous'><i class='bx bx-left-arrow-alt'></i></span>", "<span aria-label='Next'><i class='bx bx-right-arrow-alt'></i></span>"],
         autoplay: true,
         autoplayTimeout: 5000,
         responsive:{

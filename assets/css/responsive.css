@@ -812,10 +812,11 @@
         width: fit-content !important;
     }
     .clients_section .clients_section_inner .clients_slider .owl-nav {
-        top: 28px;
+        width: 45%;
+        top: 1px;
     }
     .clients_section .clients_section_inner .clients_slider .owl-nav button span {
-        font-size: 30px;
+        font-size: 22px;
     }
     /* ===================================== 
     Clients Section End
